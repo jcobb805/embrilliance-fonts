@@ -326,6 +326,14 @@
     margin-left: 6px;
     font-size: 12px;
   }
+  .multi-badge {
+    background: linear-gradient(90deg, #ff5b6e, #f7d51d, #1e4dd8) !important;
+    color: #fff !important;
+    margin-left: 6px;
+    font-size: 9px !important;
+    padding: 2px 6px !important;
+    vertical-align: middle;
+  }
   .card-actions {
     position: absolute;
     top: 8px;
@@ -723,6 +731,69 @@ const FONTS = [
   { name: "Worms", collection: "Collection 2", category: "Decorative", min: 20, max: 200, googleFont: "'Frijole', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/WormsAllGlyphs.jpg" },
 ];
 
+const KRISTINA_FONTS = [
+  { name: 'Wexford', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_wexford.png', multiColor: false },
+  { name: 'Block (Stitched)', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_block.png', multiColor: false },
+  { name: 'Tricolor', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_tricolor.png', multiColor: true },
+  { name: 'Track', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_track.png', multiColor: false },
+  { name: 'Maxwell', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_maxwell.png', multiColor: true },
+  { name: 'Henry', collection: 'My Library', category: 'Serif', min: null, max: null, googleFont: null, img: 'samples/k_henry.png', multiColor: false },
+  { name: 'Better', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_better.png', multiColor: false },
+  { name: 'Shadow (Stitched)', collection: 'My Library', category: 'Display', min: null, max: null, googleFont: null, img: 'samples/k_shadow.png', multiColor: true },
+  { name: 'Windy', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_windy.png', multiColor: false },
+  { name: 'Cursive', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_cursive.png', multiColor: false },
+  { name: 'Carambole', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_carambole.png', multiColor: false },
+  { name: 'Carsyn', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_carsyn.png', multiColor: true },
+  { name: 'Charlie', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_charlie.png', multiColor: false },
+  { name: 'Colin', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_colin.png', multiColor: true },
+  { name: 'Goodtime', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_goodtime.png', multiColor: false },
+  { name: 'Casual', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_casual.png', multiColor: false },
+  { name: 'Dosido', collection: 'My Library', category: 'Display', min: null, max: null, googleFont: null, img: 'samples/k_dosido.png', multiColor: false },
+  { name: 'Double', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_double.png', multiColor: true },
+  { name: 'Satin', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_satin.png', multiColor: true },
+  { name: 'Ella', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_ella.png', multiColor: true },
+  { name: 'Georgia', collection: 'My Library', category: 'Serif', min: null, max: null, googleFont: null, img: 'samples/k_georgia.png', multiColor: false },
+  { name: 'Graham', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_graham.png', multiColor: false },
+  { name: 'Stitch', collection: 'My Library', category: 'Specialty', min: null, max: null, googleFont: null, img: 'samples/k_stitch.png', multiColor: false },
+  { name: 'Swanky', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_swanky.png', multiColor: false },
+  { name: 'Harriet', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_harriet.png', multiColor: false },
+  { name: 'Hoedown', collection: 'My Library', category: 'Display', min: null, max: null, googleFont: null, img: 'samples/k_hoedown.png', multiColor: true },
+  { name: 'Glitter', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_glitter.png', multiColor: false },
+  { name: 'Loveme', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_loveme.png', multiColor: false },
+  { name: 'Timely', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_timely.png', multiColor: false },
+  { name: 'Jordan', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_jordan.png', multiColor: false },
+  { name: 'Kenzie', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_kenzie.png', multiColor: false },
+  { name: 'Joykate', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_joykate.png', multiColor: false },
+  { name: 'Caroline', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_caroline.png', multiColor: false },
+  { name: 'Collins', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_collins.png', multiColor: false },
+  { name: 'Pinkalicious', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_pinkalicious.png', multiColor: false },
+  { name: 'Springs', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_springs.png', multiColor: false },
+  { name: 'Kathleen', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_kathleen.png', multiColor: false },
+  { name: 'Layne', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_layne.png', multiColor: true },
+  { name: 'Duo', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_duo.png', multiColor: true },
+  { name: 'Madeline', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_madeline.png', multiColor: false },
+  { name: 'Madison', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_madison.png', multiColor: true },
+  { name: 'Norma', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_norma.png', multiColor: false },
+  { name: 'Pi B Pi (Greek)', collection: 'My Library', category: 'Monogram', min: null, max: null, googleFont: null, img: 'samples/k_pi_b_pi_greek.png', multiColor: false },
+  { name: 'Britain', collection: 'My Library', category: 'Sans Serif', min: null, max: null, googleFont: null, img: 'samples/k_britain.png', multiColor: false },
+  { name: 'Hannah', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_hannah.png', multiColor: false },
+  { name: 'River', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_river.png', multiColor: true },
+  { name: 'Mill', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_mill.png', multiColor: false },
+  { name: 'Outline', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_outline.png', multiColor: true },
+  { name: 'Chalk', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_chalk.png', multiColor: true },
+  { name: 'Stitch (Cross)', collection: 'My Library', category: 'Specialty', min: null, max: null, googleFont: null, img: 'samples/k_stitch_cross.png', multiColor: false },
+  { name: 'Sailor', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_sailor.png', multiColor: false },
+  { name: 'Sport', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_sport.png', multiColor: true },
+  { name: 'Frannie', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_frannie.png', multiColor: false },
+  { name: 'Barbie', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_barbie.png', multiColor: false },
+  { name: 'Laura', collection: 'My Library', category: 'Block', min: null, max: null, googleFont: null, img: 'samples/k_laura.png', multiColor: true },
+  { name: 'Debbie', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_debbie.png', multiColor: false },
+  { name: 'Maple', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_maple.png', multiColor: false },
+  { name: 'Farmhouse', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_farmhouse.png', multiColor: false },
+  { name: 'Peace', collection: 'My Library', category: 'Display', min: null, max: null, googleFont: null, img: 'samples/k_peace.png', multiColor: false },
+  { name: 'PrettyThings', collection: 'My Library', category: 'Script', min: null, max: null, googleFont: null, img: 'samples/k_prettythings.png', multiColor: false },
+];
+
 const STORAGE_KEY = 'embFontSampler.selected';
 const CUSTOM_KEY = 'embFontSampler.custom';
 const COLOR_KEY = 'embFontSampler.color';
@@ -818,7 +889,7 @@ function allFonts() {
     custom: true,
     id: c.id,
   }));
-  return [...FONTS, ...customs];
+  return [...FONTS, ...KRISTINA_FONTS, ...customs];
 }
 
 function getCategories() {
@@ -911,11 +982,12 @@ function render() {
         <button class="icon-btn danger" title="Delete" onclick="window.deleteCustomFont('${f.id}')">×</button>
       </div>` : '';
 
+    const multiBadge = f.multiColor ? `<span class="badge multi-badge" title="This font has built-in thread colors that don't change with the color picker">Multi-color</span>` : '';
     card.innerHTML = `
       ${actionsHtml}
       <div class="card-header">
         <div>
-          <div class="card-name">${escapeHtml(f.name)}</div>
+          <div class="card-name">${escapeHtml(f.name)} ${multiBadge}</div>
           <div class="card-meta">${escapeHtml(f.collection)} · ${escapeHtml(f.category)}${sizeStr}</div>
         </div>
         <div class="checkbox"></div>

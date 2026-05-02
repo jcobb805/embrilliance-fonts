@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Wexford",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_wexford.png",
+    "source_slot": "slot_1_1_L.png"
+  },
+  {
+    "name": "Block",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_block.png",
+    "source_slot": "slot_1_1_R.png"
+  },
+  {
+    "name": "Tricolor",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_tricolor.png",
+    "source_slot": "slot_1_2_L.png"
+  },
+  {
+    "name": "Track",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_track.png",
+    "source_slot": "slot_1_2_R.png"
+  },
+  {
+    "name": "Maxwell",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_maxwell.png",
+    "source_slot": "slot_1_3_L.png"
+  },
+  {
+    "name": "Henry",
+    "category": "Serif",
+    "multi_color": false,
+    "image": "samples/k_henry.png",
+    "source_slot": "slot_1_3_R.png"
+  },
+  {
+    "name": "Better",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_better.png",
+    "source_slot": "slot_1_4_L.png"
+  },
+  {
+    "name": "Shadow",
+    "category": "Display",
+    "multi_color": true,
+    "image": "samples/k_shadow.png",
+    "source_slot": "slot_1_4_R.png"
+  },
+  {
+    "name": "Windy",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_windy.png",
+    "source_slot": "slot_1_5_L.png"
+  },
+  {
+    "name": "Cursive",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_cursive.png",
+    "source_slot": "slot_1_5_R.png"
+  },
+  {
+    "name": "Carambole",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_carambole.png",
+    "source_slot": "slot_1_6_L.png"
+  },
+  {
+    "name": "Carsyn",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_carsyn.png",
+    "source_slot": "slot_1_6_R.png"
+  },
+  {
+    "name": "Charlie",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_charlie.png",
+    "source_slot": "slot_2_1_L.png"
+  },
+  {
+    "name": "Colin",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_colin.png",
+    "source_slot": "slot_2_1_R.png"
+  },
+  {
+    "name": "Goodtime",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_goodtime.png",
+    "source_slot": "slot_2_2_L.png"
+  },
+  {
+    "name": "Casual",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_casual.png",
+    "source_slot": "slot_2_2_R.png"
+  },
+  {
+    "name": "Dosido",
+    "category": "Display",
+    "multi_color": false,
+    "image": "samples/k_dosido.png",
+    "source_slot": "slot_2_3_L.png"
+  },
+  {
+    "name": "Double",
+    "category": "Script",
+    "multi_color": true,
+    "image": "samples/k_double.png",
+    "source_slot": "slot_2_3_R.png"
+  },
+  {
+    "name": "Satin",
+    "category": "Script",
+    "multi_color": true,
+    "image": "samples/k_satin.png",
+    "source_slot": "slot_2_4_L.png"
+  },
+  {
+    "name": "Ella",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_ella.png",
+    "source_slot": "slot_2_4_R.png"
+  },
+  {
+    "name": "Georgia",
+    "category": "Serif",
+    "multi_color": false,
+    "image": "samples/k_georgia.png",
+    "source_slot": "slot_2_5_L.png"
+  },
+  {
+    "name": "Graham",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_graham.png",
+    "source_slot": "slot_2_5_R.png"
+  },
+  {
+    "name": "Stitch",
+    "category": "Specialty",
+    "multi_color": false,
+    "image": "samples/k_stitch.png",
+    "source_slot": "slot_2_6_L.png"
+  },
+  {
+    "name": "Swanky",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_swanky.png",
+    "source_slot": "slot_2_6_R.png"
+  },
+  {
+    "name": "Harriet",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_harriet.png",
+    "source_slot": "slot_3_1_L.png"
+  },
+  {
+    "name": "Hoedown",
+    "category": "Display",
+    "multi_color": true,
+    "image": "samples/k_hoedown.png",
+    "source_slot": "slot_3_1_R.png"
+  },
+  {
+    "name": "Glitter",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_glitter.png",
+    "source_slot": "slot_3_2_L.png"
+  },
+  {
+    "name": "Loveme",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_loveme.png",
+    "source_slot": "slot_3_2_R.png"
+  },
+  {
+    "name": "Timely",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_timely.png",
+    "source_slot": "slot_3_3_L.png"
+  },
+  {
+    "name": "Jordan",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_jordan.png",
+    "source_slot": "slot_3_3_R.png"
+  },
+  {
+    "name": "Kenzie",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_kenzie.png",
+    "source_slot": "slot_3_4_L.png"
+  },
+  {
+    "name": "Joykate",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_joykate.png",
+    "source_slot": "slot_3_4_R.png"
+  },
+  {
+    "name": "Caroline",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_caroline.png",
+    "source_slot": "slot_3_5_L.png"
+  },
+  {
+    "name": "Collins",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_collins.png",
+    "source_slot": "slot_3_5_R.png"
+  },
+  {
+    "name": "Pinkalicious",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_pinkalicious.png",
+    "source_slot": "slot_3_6_L.png"
+  },
+  {
+    "name": "Springs",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_springs.png",
+    "source_slot": "slot_3_6_R.png"
+  },
+  {
+    "name": "Kathleen",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_kathleen.png",
+    "source_slot": "slot_4_1_L.png"
+  },
+  {
+    "name": "Layne",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_layne.png",
+    "source_slot": "slot_4_1_R.png"
+  },
+  {
+    "name": "Duo",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_duo.png",
+    "source_slot": "slot_4_2_L.png"
+  },
+  {
+    "name": "Madeline",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_madeline.png",
+    "source_slot": "slot_4_2_R.png"
+  },
+  {
+    "name": "Madison",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_madison.png",
+    "source_slot": "slot_4_3_L.png"
+  },
+  {
+    "name": "Norma",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_norma.png",
+    "source_slot": "slot_4_3_R.png"
+  },
+  {
+    "name": "Pi B Pi (Greek)",
+    "category": "Monogram",
+    "multi_color": false,
+    "image": "samples/k_pi_b_pi_greek.png",
+    "source_slot": "slot_4_4_L.png"
+  },
+  {
+    "name": "Britain",
+    "category": "Sans Serif",
+    "multi_color": false,
+    "image": "samples/k_britain.png",
+    "source_slot": "slot_4_4_R.png"
+  },
+  {
+    "name": "Hannah",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_hannah.png",
+    "source_slot": "slot_4_5_L.png"
+  },
+  {
+    "name": "River",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_river.png",
+    "source_slot": "slot_4_5_R.png"
+  },
+  {
+    "name": "Mill",
+    "category": "Block",
+    "multi_color": false,
+    "image": "samples/k_mill.png",
+    "source_slot": "slot_4_6_L.png"
+  },
+  {
+    "name": "Outline",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_outline.png",
+    "source_slot": "slot_4_6_R.png"
+  },
+  {
+    "name": "Chalk",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_chalk.png",
+    "source_slot": "slot_5_1_L.png"
+  },
+  {
+    "name": "Stitch (Cross)",
+    "category": "Specialty",
+    "multi_color": false,
+    "image": "samples/k_stitch_cross.png",
+    "source_slot": "slot_5_1_R.png"
+  },
+  {
+    "name": "Sailor",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_sailor.png",
+    "source_slot": "slot_5_2_L.png"
+  },
+  {
+    "name": "Sport",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_sport.png",
+    "source_slot": "slot_5_2_R.png"
+  },
+  {
+    "name": "Frannie",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_frannie.png",
+    "source_slot": "slot_5_3_L.png"
+  },
+  {
+    "name": "Barbie",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_barbie.png",
+    "source_slot": "slot_5_3_R.png"
+  },
+  {
+    "name": "Laura",
+    "category": "Block",
+    "multi_color": true,
+    "image": "samples/k_laura.png",
+    "source_slot": "slot_5_4_L.png"
+  },
+  {
+    "name": "Debbie",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_debbie.png",
+    "source_slot": "slot_5_4_R.png"
+  },
+  {
+    "name": "Maple",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_maple.png",
+    "source_slot": "slot_5_5_L.png"
+  },
+  {
+    "name": "Farmhouse",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_farmhouse.png",
+    "source_slot": "slot_5_5_R.png"
+  },
+  {
+    "name": "Peace",
+    "category": "Display",
+    "multi_color": false,
+    "image": "samples/k_peace.png",
+    "source_slot": "slot_5_6_L.png"
+  },
+  {
+    "name": "PrettyThings",
+    "category": "Script",
+    "multi_color": false,
+    "image": "samples/k_prettythings.png",
+    "source_slot": "slot_5_6_R.png"
+  }
+]
