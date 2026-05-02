@@ -579,6 +579,10 @@
     <label for="search">Search</label>
     <input type="text" id="search" placeholder="Font name..." />
   </div>
+  <div class="control-group" style="min-width: 200px;">
+    <label>Source</label>
+    <div class="chips" id="sourceChips"></div>
+  </div>
   <div class="control-group" style="flex: 1; min-width: 200px;">
     <label>Category</label>
     <div class="chips" id="categoryChips"></div>
@@ -875,6 +879,7 @@ const state = {
   editingId: null,
   pendingImage: null,
   threadColor: loadColor(),
+  source: 'All',
 };
 
 function allFonts() {
@@ -910,6 +915,20 @@ function renderChips() {
     chip.onclick = () => { state.category = cat; render(); };
     wrap.appendChild(chip);
   });
+
+  const srcWrap = document.getElementById('sourceChips');
+  srcWrap.innerHTML = '';
+  const sources = ['All', 'Official Embrilliance', 'My Library', 'Custom'];
+  const counts = { 'All': 0, 'Official Embrilliance': 0, 'My Library': 0, 'Custom': 0 };
+  allFonts().forEach(f => { counts[sourceOf(f)] = (counts[sourceOf(f)] || 0) + 1; counts.All++; });
+  sources.forEach(src => {
+    if (src !== 'All' && counts[src] === 0) return;
+    const chip = document.createElement('div');
+    chip.className = 'chip' + (state.source === src ? ' active' : '');
+    chip.textContent = `${src} (${counts[src] || 0})`;
+    chip.onclick = () => { state.source = src; render(); };
+    srcWrap.appendChild(chip);
+  });
 }
 
 function renderColorStrip() {
@@ -936,9 +955,16 @@ function applyThreadColor() {
   document.documentElement.style.setProperty('--ink', state.threadColor.hex);
 }
 
+function sourceOf(f) {
+  if (f.custom) return 'Custom';
+  if (f.collection === 'My Library') return 'My Library';
+  return 'Official Embrilliance';
+}
+
 function visibleFonts() {
   return allFonts().filter(f => {
     if (state.onlySelected && !state.selected.has(f.name)) return false;
+    if (state.source !== 'All' && sourceOf(f) !== state.source) return false;
     if (state.category !== 'All' && f.category !== state.category) return false;
     if (state.search && !f.name.toLowerCase().includes(state.search.toLowerCase())) return false;
     return true;
