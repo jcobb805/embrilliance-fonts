@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kristina's Designs — Embrilliance Font Sampler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Alfa+Slab+One&family=Allura&family=Anton&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Black+Ops+One&family=Bowlby+One&family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Carter+One&family=Caveat:wght@700&family=Cinzel:wght@700&family=Cinzel+Decorative:wght@700&family=Codystar:wght@700&family=Comic+Neue:wght@700&family=Coming+Soon&family=Cormorant+Garamond:wght@500;700&family=Faster+One&family=Forum&family=Frijole&family=Great+Vibes&family=Lilita+One&family=Major+Mono+Display&family=McLaren&family=Montserrat:wght@500;700&family=Oswald:wght@600&family=Pacifico&family=Permanent+Marker&family=Pinyon+Script&family=Playfair+Display:wght@700&family=Quicksand:wght@600&family=Raleway:wght@600&family=Rye&family=Sacramento&family=Special+Elite&family=UnifrakturCook:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-card: #ffffff;
+    --bg-card-selected: #eef4ff;
+    --bg-soft: #f7f8fa;
+    --border: #e3e6eb;
+    --border-strong: #cfd4dc;
+    --border-selected: #2563eb;
+    --text: #1a1d23;
+    --text-dim: #6b7280;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --pink: #db2777;
+    --ink: #111111; /* default thread color */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  header {
+    padding: 24px 32px 16px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #f7f8fa 0%, var(--bg) 100%);
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subtitle { color: var(--text-dim); font-size: 13px; margin: 0; }
+  .controls {
+    padding: 16px 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-card);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .control-group { display: flex; flex-direction: column; gap: 6px; }
+  .control-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+  input[type=text], select {
+    background: #fff;
+    border: 1px solid var(--border-strong);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    min-width: 180px;
+  }
+  input[type=text]:focus, select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+  button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  button:hover { background: var(--accent-hover); }
+  button.secondary {
+    background: #fff;
+    color: var(--text);
+    border: 1px solid var(--border-strong);
+  }
+  button.secondary:hover { border-color: var(--accent); color: var(--accent); }
+  .chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .chip {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--border-strong);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .chip:hover { color: var(--text); border-color: var(--accent); }
+  .chip.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .stats {
+    padding: 12px 32px;
+    color: var(--text-dim);
+    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .stats .count strong { color: var(--text); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    padding: 24px 32px 64px;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+  .card:hover { border-color: var(--accent); box-shadow: 0 2px 8px rgba(37,99,235,0.12); }
+  .card.selected {
+    background: var(--bg-card-selected);
+    border-color: var(--border-selected);
+    box-shadow: 0 0 0 1px var(--border-selected), 0 2px 8px rgba(37,99,235,0.15);
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+  .card-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .card-meta {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+  .badge {
+    background: rgba(37, 99, 235, 0.10);
+    color: var(--accent);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .checkbox {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+  .card.selected .checkbox {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .card.selected .checkbox::after {
+    content: '';
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 8px;
+    background: var(--bg-soft);
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 100px;
+    border: 1px solid var(--border);
+  }
+  .preview-text {
+    font-size: 42px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--ink);
+    word-break: break-word;
+    max-width: 100%;
+  }
+  .preview img {
+    max-width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+  }
+  /* Color tinting for sample images via mask */
+  .preview .tinted {
+    width: 100%;
+    height: 100px;
+    background-color: var(--ink);
+    -webkit-mask-image: var(--mask-img);
+    mask-image: var(--mask-img);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+  .footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid var(--border-strong);
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
+  }
+  .footer-bar .selected-count {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  .footer-bar .selected-count strong { color: var(--accent); }
+  .footer-actions { display: flex; gap: 8px; }
+
+  /* Print Layout */
+  @media print {
+    @page { size: letter; margin: 0.4in; }
+    body { background: #fff !important; color: #000 !important; }
+    header, .controls, .stats, .footer-bar, .chips, .color-row, .no-print { display: none !important; }
+    .print-only { display: block !important; }
+    .grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 16px !important;
+      padding: 0 !important;
+    }
+    .card {
+      background: #fff !important;
+      border: 1px solid #ccc !important;
+      box-shadow: none !important;
+      page-break-inside: avoid;
+      min-height: auto !important;
+      padding: 12px !important;
+    }
+    .card-name { color: #000 !important; }
+    .card-meta { color: #555 !important; }
+    .badge { background: #eee !important; color: #333 !important; }
+    .preview {
+      background: #fff !important;
+      border: 1px solid #eee;
+      min-height: 80px !important;
+    }
+    .preview-text { font-size: 36px !important; /* color stays as --ink */ }
+    .preview img { filter: none !important; }
+    .checkbox { display: none !important; }
+    .print-header {
+      display: block !important;
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #000;
+    }
+    .print-header h2 { margin: 0; font-size: 18px; }
+    .print-header p { margin: 4px 0 0; font-size: 12px; color: #555; }
+  }
+  .print-header { display: none; }
+  .print-only { display: none; }
+
+  /* Empty state */
+  .empty {
+    padding: 48px 32px;
+    text-align: center;
+    color: var(--text-dim);
+  }
+
+  /* Custom font marker */
+  .card.custom .card-name::after {
+    content: '✦';
+    color: var(--pink);
+    margin-left: 6px;
+    font-size: 12px;
+  }
+  .card-actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
+    gap: 4px;
+    z-index: 2;
+  }
+  .card.custom:hover .card-actions { display: flex; }
+  .icon-btn {
+    background: #fff;
+    border: 1px solid var(--border-strong);
+    color: var(--text);
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .icon-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .icon-btn.danger:hover { background: #dc2626; border-color: #dc2626; color: #fff; }
+
+  /* Drop overlay */
+  .drop-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(110, 168, 255, 0.12);
+    border: 4px dashed var(--accent);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .drop-overlay.active { display: flex; }
+  .drop-overlay-text {
+    background: var(--bg-card);
+    padding: 32px 48px;
+    border-radius: 12px;
+    border: 1px solid var(--accent);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal-backdrop.active { display: flex; }
+  .modal {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    width: min(480px, 90vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .modal h3 { margin: 0 0 16px; font-size: 16px; }
+  .modal label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); font-weight: 600; margin-top: 12px; margin-bottom: 6px; }
+  .modal input[type=text], .modal select { width: 100%; }
+  .modal-preview {
+    margin-top: 12px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-preview img { max-width: 100%; max-height: 180px; object-fit: contain; }
+  .modal-preview .placeholder { color: var(--text-dim); font-size: 13px; }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+  .file-drop {
+    border: 2px dashed var(--border-strong);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.15s;
+    background: var(--bg-soft);
+  }
+  .file-drop:hover, .file-drop.hover { border-color: var(--accent); color: var(--accent); background: rgba(37,99,235,0.05); }
+  .file-drop input { display: none; }
+  .add-font-btn {
+    background: var(--pink) !important;
+    color: #fff !important;
+  }
+  .add-font-btn:hover { background: #be185d !important; }
+
+  /* Color picker */
+  .color-strip {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+  }
+  .swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px var(--border-strong);
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+  }
+  .swatch:hover { transform: scale(1.15); box-shadow: 0 0 0 1px var(--accent); }
+  .swatch.active {
+    box-shadow: 0 0 0 2px var(--accent), 0 0 0 4px rgba(37,99,235,0.2);
+    transform: scale(1.1);
+  }
+  .swatch[data-name]:hover::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1d23;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: nowrap;
+    z-index: 100;
+    pointer-events: none;
+  }
+  .color-row {
+    width: 100%;
+    padding: 12px 32px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-soft);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .color-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .color-current {
+    font-size: 13px;
+    color: var(--text);
+    font-weight: 500;
+    margin-left: auto;
+  }
+  .color-current .swatch-mini {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kristina's Designs — Font Sampler</h1>
+  <p class="subtitle">Pick fonts to show customers. Type a name to preview live.</p>
+</header>
+
+<div class="controls">
+  <div class="control-group">
+    <label for="nameInput">Sample Name</label>
+    <input type="text" id="nameInput" placeholder="Olivia" value="Olivia" />
+  </div>
+  <div class="control-group">
+    <label for="namePreset">Quick Pick</label>
+    <select id="namePreset">
+      <optgroup label="Girls">
+        <option value="Olivia">Olivia</option>
+        <option value="Emma">Emma</option>
+        <option value="Sophia">Sophia</option>
+        <option value="Charlotte">Charlotte</option>
+        <option value="Amelia">Amelia</option>
+        <option value="Ava">Ava</option>
+        <option value="Mia">Mia</option>
+        <option value="Isabella">Isabella</option>
+        <option value="Harper">Harper</option>
+        <option value="Evelyn">Evelyn</option>
+        <option value="Luna">Luna</option>
+        <option value="Aurora">Aurora</option>
+        <option value="Nora">Nora</option>
+        <option value="Hazel">Hazel</option>
+        <option value="Violet">Violet</option>
+        <option value="Stella">Stella</option>
+        <option value="Eleanor">Eleanor</option>
+        <option value="Scarlett">Scarlett</option>
+        <option value="Penelope">Penelope</option>
+        <option value="Ellie">Ellie</option>
+      </optgroup>
+      <optgroup label="Boys">
+        <option value="Liam">Liam</option>
+        <option value="Noah">Noah</option>
+        <option value="Oliver">Oliver</option>
+        <option value="James">James</option>
+        <option value="Henry">Henry</option>
+        <option value="Theodore">Theodore</option>
+        <option value="Lucas">Lucas</option>
+        <option value="William">William</option>
+        <option value="Benjamin">Benjamin</option>
+        <option value="Mason">Mason</option>
+        <option value="Jack">Jack</option>
+        <option value="Owen">Owen</option>
+        <option value="Asher">Asher</option>
+        <option value="Wyatt">Wyatt</option>
+        <option value="Leo">Leo</option>
+      </optgroup>
+      <optgroup label="Other">
+        <option value="">— Show Original Samples —</option>
+        <option value="ABCabc 123">ABCabc 123</option>
+        <option value="The quick brown fox">The quick brown fox</option>
+      </optgroup>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="search">Search</label>
+    <input type="text" id="search" placeholder="Font name..." />
+  </div>
+  <div class="control-group" style="flex: 1; min-width: 200px;">
+    <label>Category</label>
+    <div class="chips" id="categoryChips"></div>
+  </div>
+  <div class="control-group">
+    <label>&nbsp;</label>
+    <button class="add-font-btn" id="addFontBtn">+ Add Font (Snip)</button>
+  </div>
+  <div class="control-group">
+    <label>&nbsp;</label>
+    <button class="secondary" id="selectAllBtn">Select All Visible</button>
+  </div>
+  <div class="control-group">
+    <label>&nbsp;</label>
+    <button class="secondary" id="clearBtn">Clear</button>
+  </div>
+</div>
+
+<div class="drop-overlay" id="dropOverlay">
+  <div class="drop-overlay-text">Drop image to add a new font sample</div>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <h3 id="modalTitle">Add Font Sample</h3>
+
+    <label for="modalImageDrop">Sample Image (paste, drop, or click)</label>
+    <div class="file-drop" id="modalImageDrop" tabindex="0">
+      <span id="modalDropText">Click, paste (Ctrl+V), or drop an image here</span>
+      <input type="file" id="modalFileInput" accept="image/*" />
+    </div>
+    <div class="modal-preview" id="modalPreview">
+      <span class="placeholder">No image yet</span>
+    </div>
+
+    <label for="modalFontName">Font Name</label>
+    <input type="text" id="modalFontName" placeholder="e.g., Hello Kitty Script" />
+
+    <label for="modalCategory">Category</label>
+    <select id="modalCategory">
+      <option value="Script">Script</option>
+      <option value="Block">Block</option>
+      <option value="Sans Serif">Sans Serif</option>
+      <option value="Serif">Serif</option>
+      <option value="Monogram">Monogram</option>
+      <option value="Decorative">Decorative</option>
+      <option value="Casual">Casual</option>
+      <option value="Display">Display</option>
+      <option value="Stencil">Stencil</option>
+      <option value="Gothic">Gothic</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="modalNotes">Notes (optional)</label>
+    <input type="text" id="modalNotes" placeholder="e.g., Etsy — by SewCute, $4" />
+
+    <div class="modal-actions">
+      <button class="secondary" id="modalCancelBtn">Cancel</button>
+      <button id="modalSaveBtn">Save Font</button>
+    </div>
+  </div>
+</div>
+
+<div class="color-row">
+  <span class="color-label">Thread Color</span>
+  <div class="color-strip" id="colorStrip"></div>
+  <span class="color-current" id="colorCurrent"></span>
+</div>
+
+<div class="stats">
+  <div class="count"><strong id="visibleCount">0</strong> fonts shown · <strong id="totalCount">0</strong> total</div>
+  <div>
+    <label style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text-dim); font-size: 13px;">
+      <input type="checkbox" id="onlySelected" /> Show selected only
+    </label>
+  </div>
+</div>
+
+<div class="print-header print-only">
+  <h2 id="printTitle">Font Samples — Kristina's Designs</h2>
+  <p id="printName"></p>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="footer-bar no-print">
+  <div class="selected-count"><strong id="selectedCount">0</strong> selected</div>
+  <div class="footer-actions">
+    <button class="secondary" id="printBtn">Print Selected</button>
+    <button id="printBtn2">Print / Save as PDF</button>
+  </div>
+</div>
+
+<script>
+const FONTS = [
+  // Embrilliance Essentials (12)
+  { name: "Bauhaus", collection: "Essentials", category: "Block", min: 11, max: 100, googleFont: "'Bowlby One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Bauhaus.png" },
+  { name: "Block", collection: "Essentials", category: "Block", min: 5, max: 75, googleFont: "'Anton', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Block-1.jpg" },
+  { name: "Bold Cursive", collection: "Essentials", category: "Script", min: 16, max: 75, googleFont: "'Allura', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Bold-Cursive.png" },
+  { name: "Comedy", collection: "Essentials", category: "Decorative", min: 9, max: 100, googleFont: "'Bungee', sans-serif", img: null },
+  { name: "Jazz", collection: "Essentials", category: "Decorative", min: 15, max: 50, googleFont: "'Bungee Inline', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/jazz.png" },
+  { name: "MGM Diamond", collection: "Essentials", category: "Monogram", min: 20, max: 200, googleFont: "'Cinzel Decorative', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/MGM%20Diamond.jpg" },
+  { name: "Old English", collection: "Essentials", category: "Gothic", min: 16, max: 180, googleFont: "'UnifrakturCook', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Old-English.png" },
+  { name: "Philly", collection: "Essentials", category: "Serif", min: 15, max: 54, googleFont: "'Playfair Display', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Philly.png" },
+  { name: "Roman", collection: "Essentials", category: "Serif", min: 17, max: 100, googleFont: "'Cormorant Garamond', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/roman.png" },
+  { name: "Stencil", collection: "Essentials", category: "Stencil", min: 23, max: 75, googleFont: "'Black Ops One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Stencil.png" },
+  { name: "Stuyvesant", collection: "Essentials", category: "Display", min: 35, max: 90, googleFont: "'Alfa Slab One', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/stuyvesant.png" },
+  { name: "University", collection: "Essentials", category: "Display", min: 25, max: 75, googleFont: "'Black Ops One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/University.png" },
+
+  // Font Collection 1 (18)
+  { name: "August", collection: "Collection 1", category: "Display", min: 15, max: 100, googleFont: "'Big Shoulders Display', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/August.png" },
+  { name: "Brittany", collection: "Collection 1", category: "Sans Serif", min: 12, max: 100, googleFont: "'Quicksand', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Brittany.png" },
+  { name: "Chalk Board", collection: "Collection 1", category: "Casual", min: 8, max: 75, googleFont: "'Permanent Marker', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Chalk-Board.png" },
+  { name: "Circus", collection: "Collection 1", category: "Display", min: 21, max: 100, googleFont: "'Carter One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Circus-e1578035383338.png" },
+  { name: "Connecting Script", collection: "Collection 1", category: "Script", min: 15, max: 200, googleFont: "'Allura', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/ConnectingScriptABC.jpg" },
+  { name: "Dallas", collection: "Collection 1", category: "Serif", min: 15, max: 35, googleFont: "'Playfair Display', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/dallas.png" },
+  { name: "Diana", collection: "Collection 1", category: "Serif", min: 15, max: 75, googleFont: "'Cormorant Garamond', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/diana.png" },
+  { name: "Fancy Script", collection: "Collection 1", category: "Script", min: 24, max: 200, googleFont: "'Great Vibes', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/fancy-script.png" },
+  { name: "Giddyup", collection: "Collection 1", category: "Casual", min: 15, max: 75, googleFont: "'Rye', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/giddyup.png" },
+  { name: "Isadora", collection: "Collection 1", category: "Script", min: 16, max: 50, googleFont: "'Sacramento', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Isadora.png" },
+  { name: "MGM Rounded", collection: "Collection 1", category: "Monogram", min: 20, max: 65, googleFont: "'McLaren', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Monogram-Rounded.png" },
+  { name: "Pacific Stick", collection: "Collection 1", category: "Decorative", min: 15, max: 100, googleFont: "'Major Mono Display', monospace", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Pacific-Stick.png" },
+  { name: "Penny", collection: "Collection 1", category: "Sans Serif", min: 8, max: 32, googleFont: "'Quicksand', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Penny.png" },
+  { name: "Roman Tall", collection: "Collection 1", category: "Serif", min: 18, max: 60, googleFont: "'Cinzel', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Roman-Tall.png" },
+  { name: "Script", collection: "Collection 1", category: "Script", min: 16, max: 75, googleFont: "'Pacifico', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/script.png" },
+  { name: "Sierra", collection: "Collection 1", category: "Sans Serif", min: 18, max: 75, googleFont: "'Montserrat', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Sierra.png" },
+  { name: "Sweet Script Connected", collection: "Collection 1", category: "Script", min: 12, max: 200, googleFont: "'Great Vibes', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/SweetScriptABC.jpg" },
+  { name: "Vacant", collection: "Collection 1", category: "Decorative", min: 8, max: 200, googleFont: "'Bungee Outline', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/vacantabc.jpg" },
+
+  // Font Collection 2 (20)
+  { name: "2 Color Varsity", collection: "Collection 2", category: "Display", min: 25, max: 51, googleFont: "'Black Ops One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/2C-Varsity.jpg" },
+  { name: "Awesome Dots", collection: "Collection 2", category: "Decorative", min: 10, max: 100, googleFont: "'Codystar', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/AwesomeDotsAllGlyphs1.jpg" },
+  { name: "Brand Iron", collection: "Collection 2", category: "Block", min: 15, max: 40, googleFont: "'Rye', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Brand-Iron.jpg" },
+  { name: "Exotic", collection: "Collection 2", category: "Decorative", min: 15, max: 80, googleFont: "'Forum', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Exotic.jpg" },
+  { name: "Florida", collection: "Collection 2", category: "Script", min: 20, max: 90, googleFont: "'Allura', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Florida.jpg" },
+  { name: "Frisco", collection: "Collection 2", category: "Block", min: 15, max: 90, googleFont: "'Bebas Neue', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Frisco.jpg" },
+  { name: "Full Block", collection: "Collection 2", category: "Block", min: 9, max: 200, googleFont: "'Anton', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Full-Block.jpg" },
+  { name: "Hobo", collection: "Collection 2", category: "Casual", min: 10, max: 100, googleFont: "'Coming Soon', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Hobo.jpg" },
+  { name: "Kids", collection: "Collection 2", category: "Casual", min: 25, max: 100, googleFont: "'Comic Neue', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Kids.jpg" },
+  { name: "Leaf", collection: "Collection 2", category: "Decorative", min: 17, max: 80, googleFont: "'Special Elite', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Leaf.jpg" },
+  { name: "Lilith", collection: "Collection 2", category: "Script", min: 25, max: 200, googleFont: "'Pinyon Script', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Lilith.jpg" },
+  { name: "Mel Script", collection: "Collection 2", category: "Script", min: 17, max: 75, googleFont: "'Sacramento', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Mel-Script.jpg" },
+  { name: "Parlor", collection: "Collection 2", category: "Display", min: 15, max: 200, googleFont: "'Yeseva One', serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/ParlorAllGlyphs.jpg" },
+  { name: "Pearl", collection: "Collection 2", category: "Sans Serif", min: 10, max: 100, googleFont: "'Raleway', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Pearl.jpg" },
+  { name: "Reggae", collection: "Collection 2", category: "Casual", min: 15, max: 40, googleFont: "'Lilita One', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Reggae.jpg" },
+  { name: "Scarboro", collection: "Collection 2", category: "Block", min: 13, max: 60, googleFont: "'Anton', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/scarboro.jpg" },
+  { name: "Shadow", collection: "Collection 2", category: "Display", min: 15, max: 100, googleFont: "'Faster One', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Shadow.jpg" },
+  { name: "Studio", collection: "Collection 2", category: "Sans Serif", min: 13, max: 100, googleFont: "'Oswald', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Studio.jpg" },
+  { name: "Tackle Twill", collection: "Collection 2", category: "Block", min: 60, max: 200, googleFont: "'Bungee Shade', sans-serif", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/Tackle-Twill.jpg" },
+  { name: "Worms", collection: "Collection 2", category: "Decorative", min: 20, max: 200, googleFont: "'Frijole', cursive", img: "https://i0.wp.com/embrilliance.com/wp-content/uploads/WormsAllGlyphs.jpg" },
+];
+
+const STORAGE_KEY = 'embFontSampler.selected';
+const CUSTOM_KEY = 'embFontSampler.custom';
+const COLOR_KEY = 'embFontSampler.color';
+
+// Curated popular embroidery thread colors (works across Madeira/Isacord/Robison-Anton)
+const THREAD_COLORS = [
+  { name: 'Black', hex: '#111111' },
+  { name: 'White', hex: '#fafafa' },
+  { name: 'Charcoal', hex: '#3a3a3a' },
+  { name: 'Silver', hex: '#a8a8a8' },
+  { name: 'Cream', hex: '#f4ead5' },
+  { name: 'Tan', hex: '#c9a97a' },
+  { name: 'Brown', hex: '#6b3f1d' },
+  { name: 'Red', hex: '#d11f2c' },
+  { name: 'Cherry', hex: '#a8112a' },
+  { name: 'Burgundy', hex: '#6e1226' },
+  { name: 'Coral', hex: '#ff7a6b' },
+  { name: 'Hot Pink', hex: '#ff3d8b' },
+  { name: 'Bubblegum', hex: '#ff8fbf' },
+  { name: 'Light Pink', hex: '#fcc9d9' },
+  { name: 'Rose', hex: '#d04572' },
+  { name: 'Magenta', hex: '#c81f7a' },
+  { name: 'Purple', hex: '#6f2da8' },
+  { name: 'Lavender', hex: '#b497d6' },
+  { name: 'Plum', hex: '#5d2a59' },
+  { name: 'Navy', hex: '#1a2c5c' },
+  { name: 'Royal Blue', hex: '#1e4dd8' },
+  { name: 'Sky Blue', hex: '#5fb6e8' },
+  { name: 'Powder Blue', hex: '#b3d4f0' },
+  { name: 'Turquoise', hex: '#1ec0c0' },
+  { name: 'Teal', hex: '#0f766e' },
+  { name: 'Mint', hex: '#9bd9b8' },
+  { name: 'Lime', hex: '#a3d530' },
+  { name: 'Kelly Green', hex: '#1f9d3b' },
+  { name: 'Forest Green', hex: '#1e5c2e' },
+  { name: 'Olive', hex: '#7d7a2c' },
+  { name: 'Yellow', hex: '#f7d51d' },
+  { name: 'Gold', hex: '#d4a017' },
+  { name: 'Sunflower', hex: '#f5b71a' },
+  { name: 'Orange', hex: '#f37021' },
+  { name: 'Pumpkin', hex: '#d35400' },
+  { name: 'Peach', hex: '#ffc7a0' },
+  { name: 'Neon Pink', hex: '#ff1493' },
+  { name: 'Neon Yellow', hex: '#e5ff00' },
+  { name: 'Neon Green', hex: '#39ff14' },
+  { name: 'Neon Orange', hex: '#ff6700' },
+];
+
+function loadCustomFonts() {
+  try {
+    return JSON.parse(localStorage.getItem(CUSTOM_KEY) || '[]');
+  } catch (e) { return []; }
+}
+function saveCustomFonts(arr) {
+  try {
+    localStorage.setItem(CUSTOM_KEY, JSON.stringify(arr));
+    return true;
+  } catch (e) {
+    alert('Storage limit reached. Try removing unused fonts or use smaller images.');
+    return false;
+  }
+}
+
+function loadColor() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(COLOR_KEY) || 'null');
+    if (saved && saved.hex) return saved;
+  } catch (e) {}
+  return THREAD_COLORS[0];
+}
+
+const state = {
+  selected: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
+  search: '',
+  category: 'All',
+  onlySelected: false,
+  sampleText: 'Olivia',
+  customFonts: loadCustomFonts(),
+  editingId: null,
+  pendingImage: null,
+  threadColor: loadColor(),
+};
+
+function allFonts() {
+  const customs = state.customFonts.map(c => ({
+    name: c.name,
+    collection: c.notes ? `Custom · ${c.notes}` : 'Custom',
+    category: c.category,
+    min: c.min || null,
+    max: c.max || null,
+    googleFont: null,
+    img: c.image,
+    custom: true,
+    id: c.id,
+  }));
+  return [...FONTS, ...customs];
+}
+
+function getCategories() {
+  return ['All', ...Array.from(new Set(allFonts().map(f => f.category))).sort()];
+}
+
+function saveSelection() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...state.selected]));
+}
+
+function renderChips() {
+  const wrap = document.getElementById('categoryChips');
+  wrap.innerHTML = '';
+  getCategories().forEach(cat => {
+    const chip = document.createElement('div');
+    chip.className = 'chip' + (state.category === cat ? ' active' : '');
+    chip.textContent = cat;
+    chip.onclick = () => { state.category = cat; render(); };
+    wrap.appendChild(chip);
+  });
+}
+
+function renderColorStrip() {
+  const strip = document.getElementById('colorStrip');
+  strip.innerHTML = '';
+  THREAD_COLORS.forEach(c => {
+    const sw = document.createElement('div');
+    sw.className = 'swatch' + (state.threadColor.hex === c.hex ? ' active' : '');
+    sw.style.backgroundColor = c.hex;
+    sw.dataset.name = c.name;
+    sw.onclick = () => {
+      state.threadColor = c;
+      try { localStorage.setItem(COLOR_KEY, JSON.stringify(c)); } catch(e) {}
+      applyThreadColor();
+      renderColorStrip();
+    };
+    strip.appendChild(sw);
+  });
+  document.getElementById('colorCurrent').innerHTML =
+    `<span class="swatch-mini" style="background:${state.threadColor.hex}"></span>${escapeHtml(state.threadColor.name)}`;
+}
+
+function applyThreadColor() {
+  document.documentElement.style.setProperty('--ink', state.threadColor.hex);
+}
+
+function visibleFonts() {
+  return allFonts().filter(f => {
+    if (state.onlySelected && !state.selected.has(f.name)) return false;
+    if (state.category !== 'All' && f.category !== state.category) return false;
+    if (state.search && !f.name.toLowerCase().includes(state.search.toLowerCase())) return false;
+    return true;
+  });
+}
+
+function render() {
+  renderChips();
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  const visible = visibleFonts();
+  document.getElementById('visibleCount').textContent = visible.length;
+  document.getElementById('totalCount').textContent = FONTS.length;
+  document.getElementById('selectedCount').textContent = state.selected.size;
+
+  if (visible.length === 0) {
+    grid.innerHTML = '<div class="empty">No fonts match your filters.</div>';
+    return;
+  }
+
+  visible.forEach(f => {
+    const card = document.createElement('div');
+    card.className = 'card' + (state.selected.has(f.name) ? ' selected' : '') + (f.custom ? ' custom' : '');
+    card.onclick = (e) => {
+      if (e.target.closest('.icon-btn')) return;
+      if (state.selected.has(f.name)) state.selected.delete(f.name);
+      else state.selected.add(f.name);
+      saveSelection();
+      render();
+    };
+
+    const showLive = state.sampleText && state.sampleText.trim().length > 0 && f.googleFont;
+    const previewHtml = showLive
+      ? `<div class="preview-text" style="font-family: ${f.googleFont};">${escapeHtml(state.sampleText)}</div>`
+      : (f.img ? `<img src="${f.img}" alt="${escapeHtml(f.name)}" loading="lazy" />` : `<div class="preview-text" style="font-family: ${f.googleFont || 'inherit'};">AaBb 123</div>`);
+
+    const sizeStr = (f.min && f.max) ? ` · ${f.min}–${f.max}mm` : '';
+    const actionsHtml = f.custom ? `
+      <div class="card-actions">
+        <button class="icon-btn" title="Edit" onclick="window.editCustomFont('${f.id}')">✎</button>
+        <button class="icon-btn danger" title="Delete" onclick="window.deleteCustomFont('${f.id}')">×</button>
+      </div>` : '';
+
+    card.innerHTML = `
+      ${actionsHtml}
+      <div class="card-header">
+        <div>
+          <div class="card-name">${escapeHtml(f.name)}</div>
+          <div class="card-meta">${escapeHtml(f.collection)} · ${escapeHtml(f.category)}${sizeStr}</div>
+        </div>
+        <div class="checkbox"></div>
+      </div>
+      <div class="preview">${previewHtml}</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function doPrintSelected() {
+  if (state.selected.size === 0) {
+    alert('Select at least one font first.');
+    return;
+  }
+  const wasFilter = state.onlySelected;
+  state.onlySelected = true;
+  document.getElementById('onlySelected').checked = true;
+  document.getElementById('printName').textContent = state.sampleText
+    ? `Sample: ${state.sampleText}`
+    : '';
+  render();
+  setTimeout(() => {
+    window.print();
+    state.onlySelected = wasFilter;
+    document.getElementById('onlySelected').checked = wasFilter;
+    render();
+  }, 100);
+}
+
+document.getElementById('nameInput').addEventListener('input', e => {
+  state.sampleText = e.target.value;
+  document.getElementById('namePreset').value = '';
+  render();
+});
+document.getElementById('namePreset').addEventListener('change', e => {
+  state.sampleText = e.target.value;
+  document.getElementById('nameInput').value = e.target.value;
+  render();
+});
+document.getElementById('search').addEventListener('input', e => {
+  state.search = e.target.value;
+  render();
+});
+document.getElementById('onlySelected').addEventListener('change', e => {
+  state.onlySelected = e.target.checked;
+  render();
+});
+document.getElementById('selectAllBtn').addEventListener('click', () => {
+  visibleFonts().forEach(f => state.selected.add(f.name));
+  saveSelection();
+  render();
+});
+document.getElementById('clearBtn').addEventListener('click', () => {
+  state.selected.clear();
+  saveSelection();
+  render();
+});
+document.getElementById('printBtn').addEventListener('click', doPrintSelected);
+document.getElementById('printBtn2').addEventListener('click', doPrintSelected);
+
+// ===== Custom Font Add / Edit / Delete =====
+
+function genId() { return 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+
+function downsampleImage(file, maxDim = 700, quality = 0.85) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = e => {
+      const img = new Image();
+      img.onload = () => {
+        let { width, height } = img;
+        const scale = Math.min(1, maxDim / Math.max(width, height));
+        width = Math.round(width * scale);
+        height = Math.round(height * scale);
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#fff';
+        ctx.fillRect(0, 0, width, height);
+        ctx.drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function openModal(editId = null) {
+  state.editingId = editId;
+  state.pendingImage = null;
+  const modal = document.getElementById('modalBackdrop');
+  const titleEl = document.getElementById('modalTitle');
+  const nameInput = document.getElementById('modalFontName');
+  const catInput = document.getElementById('modalCategory');
+  const notesInput = document.getElementById('modalNotes');
+  const preview = document.getElementById('modalPreview');
+
+  if (editId) {
+    const c = state.customFonts.find(x => x.id === editId);
+    if (!c) return;
+    titleEl.textContent = 'Edit Font Sample';
+    nameInput.value = c.name;
+    catInput.value = c.category;
+    notesInput.value = c.notes || '';
+    state.pendingImage = c.image;
+    preview.innerHTML = `<img src="${c.image}" alt="" />`;
+  } else {
+    titleEl.textContent = 'Add Font Sample';
+    nameInput.value = '';
+    catInput.value = 'Script';
+    notesInput.value = '';
+    preview.innerHTML = '<span class="placeholder">No image yet</span>';
+  }
+  modal.classList.add('active');
+  setTimeout(() => nameInput.focus(), 50);
+}
+
+function closeModal() {
+  document.getElementById('modalBackdrop').classList.remove('active');
+  state.editingId = null;
+  state.pendingImage = null;
+}
+
+async function handleImageFile(file) {
+  if (!file || !file.type.startsWith('image/')) return;
+  try {
+    const dataUrl = await downsampleImage(file);
+    state.pendingImage = dataUrl;
+    document.getElementById('modalPreview').innerHTML = `<img src="${dataUrl}" alt="" />`;
+  } catch (e) {
+    alert('Could not read image.');
+  }
+}
+
+document.getElementById('addFontBtn').addEventListener('click', () => openModal());
+document.getElementById('modalCancelBtn').addEventListener('click', closeModal);
+document.getElementById('modalBackdrop').addEventListener('click', e => {
+  if (e.target.id === 'modalBackdrop') closeModal();
+});
+
+document.getElementById('modalFileInput').addEventListener('change', e => {
+  if (e.target.files[0]) handleImageFile(e.target.files[0]);
+});
+document.getElementById('modalImageDrop').addEventListener('click', () => {
+  document.getElementById('modalFileInput').click();
+});
+
+// Drag/drop on modal drop zone
+const modalDrop = document.getElementById('modalImageDrop');
+['dragover', 'dragenter'].forEach(ev => modalDrop.addEventListener(ev, e => {
+  e.preventDefault();
+  modalDrop.classList.add('hover');
+}));
+['dragleave', 'drop'].forEach(ev => modalDrop.addEventListener(ev, e => {
+  e.preventDefault();
+  modalDrop.classList.remove('hover');
+}));
+modalDrop.addEventListener('drop', e => {
+  if (e.dataTransfer.files[0]) handleImageFile(e.dataTransfer.files[0]);
+});
+
+// Paste from clipboard (Ctrl+V) anywhere when modal open
+document.addEventListener('paste', e => {
+  if (!document.getElementById('modalBackdrop').classList.contains('active')) return;
+  const items = e.clipboardData?.items || [];
+  for (const item of items) {
+    if (item.type.startsWith('image/')) {
+      const file = item.getAsFile();
+      if (file) {
+        handleImageFile(file);
+        e.preventDefault();
+        return;
+      }
+    }
+  }
+});
+
+document.getElementById('modalSaveBtn').addEventListener('click', () => {
+  const name = document.getElementById('modalFontName').value.trim();
+  const category = document.getElementById('modalCategory').value;
+  const notes = document.getElementById('modalNotes').value.trim();
+
+  if (!name) { alert('Font name is required.'); return; }
+  if (!state.pendingImage) { alert('Add an image — drop, paste, or click to upload.'); return; }
+
+  if (state.editingId) {
+    const idx = state.customFonts.findIndex(c => c.id === state.editingId);
+    if (idx >= 0) {
+      state.customFonts[idx] = { ...state.customFonts[idx], name, category, notes, image: state.pendingImage };
+    }
+  } else {
+    if (allFonts().some(f => f.name.toLowerCase() === name.toLowerCase())) {
+      if (!confirm(`A font named "${name}" already exists. Add anyway?`)) return;
+    }
+    state.customFonts.push({ id: genId(), name, category, notes, image: state.pendingImage, addedAt: Date.now() });
+  }
+  if (saveCustomFonts(state.customFonts)) {
+    closeModal();
+    render();
+  }
+});
+
+window.editCustomFont = (id) => openModal(id);
+window.deleteCustomFont = (id) => {
+  const c = state.customFonts.find(x => x.id === id);
+  if (!c) return;
+  if (!confirm(`Delete "${c.name}"?`)) return;
+  state.customFonts = state.customFonts.filter(x => x.id !== id);
+  state.selected.delete(c.name);
+  saveCustomFonts(state.customFonts);
+  saveSelection();
+  render();
+};
+
+// Page-level drag-drop overlay (drop anywhere to add)
+let dragCounter = 0;
+const overlay = document.getElementById('dropOverlay');
+window.addEventListener('dragenter', e => {
+  if (!e.dataTransfer.types.includes('Files')) return;
+  dragCounter++;
+  overlay.classList.add('active');
+});
+window.addEventListener('dragleave', e => {
+  dragCounter--;
+  if (dragCounter <= 0) { dragCounter = 0; overlay.classList.remove('active'); }
+});
+window.addEventListener('dragover', e => e.preventDefault());
+window.addEventListener('drop', e => {
+  e.preventDefault();
+  dragCounter = 0;
+  overlay.classList.remove('active');
+  const file = e.dataTransfer.files[0];
+  if (!file || !file.type.startsWith('image/')) return;
+  if (document.getElementById('modalBackdrop').classList.contains('active')) {
+    handleImageFile(file);
+  } else {
+    openModal();
+    handleImageFile(file);
+    // Try to extract a name from filename
+    const fname = file.name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' ').trim();
+    if (fname && fname.length < 60) {
+      document.getElementById('modalFontName').value = fname;
+    }
+  }
+});
+
+// Esc closes modal
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+applyThreadColor();
+renderColorStrip();
+render();
+</script>
+</body>
+</html>
